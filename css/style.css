@@ -692,7 +692,16 @@ input[type=search] {
 .item-model__title {
   color: #fff;
   font-family: Unbounded,sans-serif;
-  line-height: 1.5
+  line-height: 1.5;
+  display: flex;
+  gap: .3125rem;
+  align-items: center
+}
+.item-model__title.verif::after {
+  content: "";
+  width: .875rem;
+  height: .875rem;
+  background: url(../img/home/top/verif.svg) no-repeat center/contain
 }
 .item-model__title:not(:last-child) {
   margin-bottom: .25rem
@@ -1243,6 +1252,12 @@ input[type=search] {
     max-width: 19.375rem
   }
 }
+@media (min-width:43.74875em) {
+  .home__share .roadmap-home__image::after {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg)
+  }
+}
 @media (min-width:47.99875em) {
   .top-home__slider .splide__list {
     display: grid!important;
@@ -1276,8 +1291,8 @@ input[type=search] {
 }
 @media (min-width:74.99875em) {
   .home__share .roadmap-home__image::after {
-    -webkit-transform: translateX(60%);
-    transform: translateX(60%)
+    -webkit-transform: translateX(60%) rotate(30deg);
+    transform: translateX(60%) rotate(30deg)
   }
 }
 @media (min-width:125.5em) {
@@ -1465,8 +1480,7 @@ input[type=search] {
     margin-bottom: 1.875rem
   }
   .roadmap-home__body {
-    gap: 1.25rem;
-    grid-template-columns: 1fr
+    gap: 1.25rem
   }
   .home__customize .roadmap-home__body::before {
     width: 6.25rem
@@ -1492,6 +1506,9 @@ input[type=search] {
   }
 }
 @media (max-width:43.74875em) {
+  .roadmap-home__body {
+    grid-template-columns: 1fr
+  }
   .home__active .roadmap-home__content::before {
     width: 8.0625rem;
     top: 100%;
@@ -1522,7 +1539,12 @@ input[type=search] {
     height: 2.75rem
   }
   .top-home__slider .item-model__title {
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    gap: .4375rem
+  }
+  .top-home__slider .item-model__title.verif::after {
+    width: 1.3125rem;
+    height: 1.3125rem
   }
   .top-home__slider .item-model__title:not(:last-child) {
     margin-bottom: .375rem
