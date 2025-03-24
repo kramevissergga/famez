@@ -725,6 +725,9 @@ input[type=search] {
 }
 .menu__actions {
   display: flex;
+  gap: 1.25rem
+}
+.menu__actions--auth {
   gap: .875rem
 }
 .menu__button {
@@ -2412,7 +2415,9 @@ input[type=search] {
 @media (max-width:68.81125em) {
   .menu__actions {
     flex-direction: column;
-    width: 100%;
+    width: 100%
+  }
+  .menu__actions--auth {
     gap: .625rem
   }
 }
