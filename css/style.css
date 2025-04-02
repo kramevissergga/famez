@@ -1018,6 +1018,11 @@ body:has(.menu-profile--open)::after {
 .menu {
   flex-grow: 1
 }
+.menu__actions {
+  display: flex;
+  gap: .875rem;
+  flex-wrap: wrap
+}
 .menu__body {
   display: flex;
   align-items: center
