@@ -158,21 +158,29 @@
 				<div class="profile__container">
 					<div class="profile__left">
 						<div data-da=".profile__body, 899.98, first" class="profile__menu menu-profile">
-							<div class="menu-profile__header menu-profile__header--border">
+							<div class="menu-profile__header menu-profile__header--border menu-profile__header--col">
 								<div class="menu-profile__user user-mini-pr">
 									<a href="#" class="user-mini-pr__image _online">
-										<img class="ibg" src="img/home/top/01.webp" alt="User" class="ibg">
+										<img class="ibg" src="img/profile/fan/avatar.webp" alt="User" class="ibg">
 									</a>
 									<a href="#" class="user-mini-pr__title verif">
-										<span>Lexi Freeman</span>
+										<span>Dimm</span>
 									</a>
 									<div class="user-mini-pr__username">
-										<a href="#">@lexigoddes1997</a>
+										<a href="#">@dimm1990</a>
 									</div>
 								</div>
-								<button class="menu-profile__chevron _icon-chevron icon-btn">
+								<div class="goals">
+									<div class="goals__label">
+										<a href="#" class="wallet-label _icon-diamond">
+											244
+										</a>
+										of 2000 <span>Points</span>
+									</div>
+									<div style="--progress: 50%" class="goals__progress">
 
-								</button>
+									</div>
+								</div>
 							</div>
 							<a href="#" class="menu-profile__item _active">
 								<span>Profile</span>
@@ -198,27 +206,29 @@
 							<div class="menu-profile__set-access set-access">
 								<button class="set-access__close _icon-cross"></button>
 								<h5 class="set-access__title">
-									Tired of managing your profile? 🥱
+									Unlock the Ultimate Experience! 🔓
 								</h5>
 								<div class="set-access__text">
-									Let agency pros handle visibility, pass access, and just sit back & get paid! 💰
+									Want to connect with your favorite creators and dive into exclusive content? Subscribe now to enjoy
+									premium profiles, personal messaging, and the power to comment, rate, and block – all tailored for
+									you! 🚀
 								</div>
 								<a href="#" class="set-access__button button button--border">
-									Set Access Permission
+									See Subscription Bundles
 								</a>
 							</div>
 						</div>
 					</div>
 					<div class="profile__body">
 						<section class="profile__set set-profile">
+
 							<div class="set-profile__header">
 								<a href="#" class="set-profile__back _icon-ch-right icon-btn"></a>
 								<h1 class="set-profile__title title">
-									Profile Settings
+									Account Settings
 								</h1>
 							</div>
 							<form action="#" method="post" enctype="multipart/form-data" class="set-profile__form">
-
 								<label class="set-profile__preview _icon-camera">
 									<input type="file" accept="image.webp, image.webp, image.webp, image.webp">
 								</label>
@@ -227,11 +237,11 @@
 										<input type="file" accept="image.webp, image.webp, image.webp, image.webp">
 									</label>
 									<div class="set-profile__field field">
-										<div class="field__input _validated">
+										<div class="field__input">
 											<div class="field__label">
 												Username
 											</div>
-											<input value="@lexigoddes1997" type="text" name="username" placeholder="">
+											<input value="@dimm1990" type="text" name="username" placeholder="">
 										</div>
 										<a href="#" class="field__link">
 											https://famez.com/lexigoddes1997
@@ -240,73 +250,106 @@
 									<div class="set-profile__field field">
 										<div class="field__input">
 											<div class="field__label">
-												Display Name
+												EMAIL
 											</div>
-											<input value="Lexi Freeman" type="text" name="name" placeholder="">
-										</div>
-										<div class="field__length">
-											11/40
+											<input value="Dimm@gmail.com" type="email" name="email" placeholder="">
 										</div>
 									</div>
+									<div class="set-profile__phone phone-input">
+										<div class="phone-input__aside">
+											<div class="phone-input__label">
+												phone
+											</div>
+											<select data-class-modif="flags">
+												<option value="1" data-asset="img/flags/germany.svg" selected></option>
+												<option data-asset="img/flags/germany.svg" value="2"></option>
+												<option data-asset="img/flags/germany.svg" value="3"></option>
+												<option data-asset="img/flags/germany.svg" value="4"></option>
+											</select>
+										</div>
+										<div class="phone-input__field field">
+											<div class="field__input">
+												<input type="text" name="email" placeholder="Phone Number">
+											</div>
+										</div>
+									</div>
+									<h2 class="set-profile__block-title">
+										Connected accounts
+									</h2>
 									<div class="set-profile__field field">
 										<div class="field__input">
 											<div class="field__label">
-												Bio
+												Additional famez account
 											</div>
-											<textarea name="bio" placeholder=""></textarea>
+											<input value="@" type="text" name="add-account" placeholder="">
 										</div>
-										<div class="field__length">
-											0/1000
+										<div class="field__text">
+											Enter account username you want to connect
+										</div>
+									</div>
+									<h2 class="set-profile__block-title">
+										Password
+									</h2>
+									<div class="set-profile__field field">
+										<div class="field__input field__input--password">
+											<div class="field__label">
+												CHANGE PASSWORD
+											</div>
+											<input value="123456789012345" type="password" name="password" placeholder="">
+											<button type="button" class="field__hide icon-btn _icon-eye"></button>
+										</div>
+										<div class="field__text field__text--green">
+											Password difficulty: <span>Good</span>
 										</div>
 									</div>
 									<div class="set-profile__field field">
-										<div class="field__input">
+										<div class="field__input field__input--password">
 											<div class="field__label">
-												Location
+												CONFIRM PASSWORD
 											</div>
-											<input type="text" name="location" placeholder="">
+											<input value="123456789012345" type="password" name="confirm-password" placeholder="">
+											<button type="button" class="field__hide icon-btn _icon-eye"></button>
 										</div>
 									</div>
-									<div class="set-profile__field field">
-										<div class="field__input">
-											<div class="field__label">
-												Amazon wish list
-											</div>
-											<input type="text" name="wishlist" placeholder="">
+									<h2 class="set-profile__block-title">
+										Account management
+									</h2>
+									<div class="set-profile__data get-data">
+										<div class="get-data__body">
+											<h3>
+												Download my data
+											</h3>
+											<p>
+												Save all your data before any manipulations with your account
+											</p>
 										</div>
+										<button type="button" class="get-data__button _icon-download button button--border button--pink-border">
+											Download
+										</button>
 									</div>
-									<div class="set-profile__websites websites-inputs">
-										<div class="websites-inputs__item">
-											<div class="websites-inputs__field field">
+									<div class="set-profile__delete delete-account">
+										<div class="delete-account__body">
+											<div class="delete-account__title">
+												Delete account
+											</div>
+											<div class="delete-account__captcha">
+												<img src="img/profile/captcha.webp" alt="Image" class="ibg">
+											</div>
+											<div class="delete-account__field field">
 												<div class="field__input">
-													<div class="field__label">
-														Website URL 1
-													</div>
-													<input type="text" name="websites[0]website" placeholder="">
+													<input type="text" name="code" placeholder="Verification Code">
 												</div>
 											</div>
-											<button type="button" class="websites-inputs__add button _icon-plus">
+											<button class="delete-account__button button button--border button--pink-border">
+												Delete Account
 											</button>
 										</div>
-									</div>
-									<div class="set-profile__pass upload">
-										<h5 class="upload__title">
-											Upload ID
-										</h5>
-										<div class="upload__subtitle">
-											Upload your documents materials
-										</div>
-										<label class="upload__input input-upload _icon-picture">
-											<input type="file" accept="image.webp, image.webp, image.webp, image.webp">
-											<div class="input-upload__body">
-												<div class="input-upload__title">
-													Add Picture
-												</div>
-												<div class="input-upload__label">
-													Max size: 5MB, Formats: JPG, PNG, GIF
-												</div>
+										<div class="delete-account__footer">
+											<button type="button" class="delete-account__reload">Reload Code</button>
+											<div class="delete-account__label">
+												This will permanently delete your account!
 											</div>
-										</label>
+										</div>
 									</div>
 									<button class="set-profile__submit button">
 										Save Changes
@@ -316,15 +359,32 @@
 						</section>
 					</div>
 					<div class="profile__right">
-						<div class="profile__boost-banner boost-banner">
-							<div class="boost-banner__text">
-								Your profile has already been viewed <b>12,544 times</b>
-								Imagine how many more people could discover you!
-								<b>Boost your visibility now and let the world see your shine!</b> ✨
-							</div>
-							<a href="#" class="boost-banner__button button button--white">
-								Boost My Reach 🚀
-							</a>
+						<div data-spoilers class="profile__aside-spoilers spoilers spoilers--bg">
+							<details data-open class="spoilers__item">
+								<summary class="spoilers__title _icon-chevron">Goals</summary>
+								<div class="spoilers__body spoilers__body--goals">
+									<div class="goals">
+										<div class="goals__label">
+											<a href="#" class="wallet-label _icon-diamond">
+												244
+											</a>
+											of 2000 <span>Points</span>
+										</div>
+										<div style="--progress: 50%" class="goals__progress">
+
+										</div>
+										<div class="goals__text">
+											<p>
+												When I reach <b>2000</b> <a href="#">Points</a>, I can redeem them for a month of the Premium
+												Pulse subscription –
+												unlocking personal messaging with creators and exclusive content that takes my fandom to the
+												next
+												level!
+											</p>
+										</div>
+									</div>
+								</div>
+							</details>
 						</div>
 						<div class="profile__links terms-links">
 							<a href="#">

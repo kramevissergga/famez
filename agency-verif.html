@@ -158,29 +158,26 @@
 				<div class="profile__container">
 					<div class="profile__left">
 						<div data-da=".profile__body, 899.98, first" class="profile__menu menu-profile">
-							<div class="menu-profile__header menu-profile__header--border">
+							<div class="menu-profile__header menu-profile__header--col menu-profile__header--border">
 								<div class="menu-profile__user user-mini-pr">
 									<a href="#" class="user-mini-pr__image _online">
-										<img class="ibg" src="img/home/top/01.webp" alt="User" class="ibg">
+										<img class="ibg" src="img/profile/agency/avatar.webp" alt="User" class="ibg">
 									</a>
 									<a href="#" class="user-mini-pr__title verif">
-										<span>Lexi Freeman</span>
+										<span>The Models Agency</span>
 									</a>
 									<div class="user-mini-pr__username">
-										<a href="#">@lexigoddes1997</a>
+										<a href="#">@themodelsag</a>
 									</div>
 								</div>
-								<button class="menu-profile__chevron _icon-chevron icon-btn">
-
-								</button>
+								<div class="menu-profile__wallet">
+									€200
+									<span>
+										Сredits on your wallet
+									</span>
+								</div>
 							</div>
-							<a href="#" class="menu-profile__item _active">
-								<span>Profile</span>
-							</a>
-							<a href="#" class="menu-profile__item">
-								<span>Notifications</span>
-							</a>
-							<a href="#" class="menu-profile__item">
+							<a href="#" class="menu-profile__item ">
 								<span>Account</span>
 							</a>
 							<a href="#" class="menu-profile__item">
@@ -190,23 +187,11 @@
 								<span>Notifications</span>
 							</a>
 							<a href="#" class="menu-profile__item">
-								<span>Integrations</span>
-							</a>
-							<a href="#" class="menu-profile__item">
 								<span>Interface</span>
 							</a>
-							<div class="menu-profile__set-access set-access">
-								<button class="set-access__close _icon-cross"></button>
-								<h5 class="set-access__title">
-									Tired of managing your profile? 🥱
-								</h5>
-								<div class="set-access__text">
-									Let agency pros handle visibility, pass access, and just sit back & get paid! 💰
-								</div>
-								<a href="#" class="set-access__button button button--border">
-									Set Access Permission
-								</a>
-							</div>
+							<a href="#" class="menu-profile__item _active">
+								<span>Verification</span>
+							</a>
 						</div>
 					</div>
 					<div class="profile__body">
@@ -214,79 +199,53 @@
 							<div class="set-profile__header">
 								<a href="#" class="set-profile__back _icon-ch-right icon-btn"></a>
 								<h1 class="set-profile__title title">
-									Profile Settings
+									Verification
 								</h1>
 							</div>
 							<form action="#" method="post" enctype="multipart/form-data" class="set-profile__form">
-
-								<label class="set-profile__preview _icon-camera">
-									<input type="file" accept="image.webp, image.webp, image.webp, image.webp">
-								</label>
 								<div class="set-profile__body">
-									<label class="set-profile__pic _icon-camera">
-										<input type="file" accept="image.webp, image.webp, image.webp, image.webp">
-									</label>
+									<div class="set-profile__text text">
+										<p>
+											Verify your identity with a <b>ID scan</b> to receive a <b>trusted badge</b>. Higher
+											credibility unlocks more opportunities
+										</p>
+									</div>
+									<h2 class="set-profile__block-title">
+										Account info
+									</h2>
 									<div class="set-profile__field field">
 										<div class="field__input _validated">
 											<div class="field__label">
-												Username
+												EMAIL
 											</div>
-											<input value="@lexigoddes1997" type="text" name="username" placeholder="">
-										</div>
-										<a href="#" class="field__link">
-											https://famez.com/lexigoddes1997
-										</a>
-									</div>
-									<div class="set-profile__field field">
-										<div class="field__input">
-											<div class="field__label">
-												Display Name
-											</div>
-											<input value="Lexi Freeman" type="text" name="name" placeholder="">
-										</div>
-										<div class="field__length">
-											11/40
+											<input value="themodelsag@gmail.com" type="email" name="email" placeholder="">
 										</div>
 									</div>
-									<div class="set-profile__field field">
-										<div class="field__input">
-											<div class="field__label">
-												Bio
+									<div class="set-profile__phone phone-input">
+										<div class="phone-input__aside">
+											<div class="phone-input__label">
+												phone
 											</div>
-											<textarea name="bio" placeholder=""></textarea>
+											<select data-class-modif="flags">
+												<option value="1" data-asset="img/flags/germany.svg" selected></option>
+												<option data-asset="img/flags/germany.svg" value="2"></option>
+												<option data-asset="img/flags/germany.svg" value="3"></option>
+												<option data-asset="img/flags/germany.svg" value="4"></option>
+											</select>
 										</div>
-										<div class="field__length">
-											0/1000
+										<div class="phone-input__field field">
+											<div class="field__input">
+												<input type="text" name="email" placeholder="Phone Number">
+											</div>
 										</div>
 									</div>
 									<div class="set-profile__field field">
-										<div class="field__input">
+										<div class="field__input field__input--password">
 											<div class="field__label">
-												Location
+												CHANGE PASSWORD
 											</div>
-											<input type="text" name="location" placeholder="">
-										</div>
-									</div>
-									<div class="set-profile__field field">
-										<div class="field__input">
-											<div class="field__label">
-												Amazon wish list
-											</div>
-											<input type="text" name="wishlist" placeholder="">
-										</div>
-									</div>
-									<div class="set-profile__websites websites-inputs">
-										<div class="websites-inputs__item">
-											<div class="websites-inputs__field field">
-												<div class="field__input">
-													<div class="field__label">
-														Website URL 1
-													</div>
-													<input type="text" name="websites[0]website" placeholder="">
-												</div>
-											</div>
-											<button type="button" class="websites-inputs__add button _icon-plus">
-											</button>
+											<input value="123456789012345" type="password" name="password" placeholder="">
+											<button type="button" class="field__hide icon-btn _icon-eye"></button>
 										</div>
 									</div>
 									<div class="set-profile__pass upload">
@@ -307,6 +266,13 @@
 												</div>
 											</div>
 										</label>
+										<div class="upload__checkbox checkbox">
+											<label class="checkbox__label">
+												<span></span>
+												<input type="checkbox">
+												I am confirming my identity
+											</label>
+										</div>
 									</div>
 									<button class="set-profile__submit button">
 										Save Changes
@@ -316,11 +282,254 @@
 						</section>
 					</div>
 					<div class="profile__right">
-						<div class="profile__boost-banner boost-banner">
-							<div class="boost-banner__text">
-								Your profile has already been viewed <b>12,544 times</b>
-								Imagine how many more people could discover you!
-								<b>Boost your visibility now and let the world see your shine!</b> ✨
+						<div data-spoilers class="profile__aside-spoilers spoilers spoilers--bg">
+							<details data-open class="spoilers__item">
+								<summary class="spoilers__title _icon-chevron">Our Best Models</summary>
+								<div class="spoilers__body">
+									<div class="best-models-aside">
+										<div data-simplebar class="best-models-aside__wrapper">
+											<div class="best-models-aside__items">
+												<div class="best-models-aside__item">
+													<div class="best-models-aside__user user-mini-pr user-mini-pr--rating">
+														<a href="#" class="user-mini-pr__image">
+															<img class="ibg" src="img/profile/fan/user.webp" alt="User">
+														</a>
+														<a href="#" class="user-mini-pr__title verif">
+															<span>Lexi Freeman</span>
+														</a>
+														<div class="user-mini-pr__username">
+															<a href="#">@lexigoddes1997</a>
+														</div>
+														<div class="user-mini-pr__rating _icon-star">
+															4.3
+														</div>
+													</div>
+													<div class="best-models-aside__settings icon-btn _icon-settings">
+
+													</div>
+												</div>
+												<div class="best-models-aside__item">
+													<div class="best-models-aside__user user-mini-pr user-mini-pr--rating">
+														<a href="#" class="user-mini-pr__image">
+															<img class="ibg" src="img/profile/fan/user.webp" alt="User">
+														</a>
+														<a href="#" class="user-mini-pr__title verif">
+															<span>Lexi Freeman</span>
+														</a>
+														<div class="user-mini-pr__username">
+															<a href="#">@lexigoddes1997</a>
+														</div>
+														<div class="user-mini-pr__rating _icon-star">
+															4.3
+														</div>
+													</div>
+													<div class="best-models-aside__settings icon-btn _icon-settings">
+
+													</div>
+												</div>
+												<div class="best-models-aside__item">
+													<div class="best-models-aside__user user-mini-pr user-mini-pr--rating">
+														<a href="#" class="user-mini-pr__image">
+															<img class="ibg" src="img/profile/fan/user.webp" alt="User">
+														</a>
+														<a href="#" class="user-mini-pr__title verif">
+															<span>Lexi Freeman</span>
+														</a>
+														<div class="user-mini-pr__username">
+															<a href="#">@lexigoddes1997</a>
+														</div>
+														<div class="user-mini-pr__rating _icon-star">
+															4.3
+														</div>
+													</div>
+													<div class="best-models-aside__settings icon-btn _icon-settings">
+
+													</div>
+												</div>
+												<div class="best-models-aside__item">
+													<div class="best-models-aside__user user-mini-pr user-mini-pr--rating">
+														<a href="#" class="user-mini-pr__image">
+															<img class="ibg" src="img/profile/fan/user.webp" alt="User">
+														</a>
+														<a href="#" class="user-mini-pr__title verif">
+															<span>Lexi Freeman</span>
+														</a>
+														<div class="user-mini-pr__username">
+															<a href="#">@lexigoddes1997</a>
+														</div>
+														<div class="user-mini-pr__rating _icon-star">
+															4.3
+														</div>
+													</div>
+													<div class="best-models-aside__settings icon-btn _icon-settings">
+
+													</div>
+												</div>
+												<div class="best-models-aside__item">
+													<div class="best-models-aside__user user-mini-pr user-mini-pr--rating">
+														<a href="#" class="user-mini-pr__image">
+															<img class="ibg" src="img/profile/fan/user.webp" alt="User">
+														</a>
+														<a href="#" class="user-mini-pr__title verif">
+															<span>Lexi Freeman</span>
+														</a>
+														<div class="user-mini-pr__username">
+															<a href="#">@lexigoddes1997</a>
+														</div>
+														<div class="user-mini-pr__rating _icon-star">
+															4.3
+														</div>
+													</div>
+													<div class="best-models-aside__settings icon-btn _icon-settings">
+
+													</div>
+												</div>
+												<div class="best-models-aside__item">
+													<div class="best-models-aside__user user-mini-pr user-mini-pr--rating">
+														<a href="#" class="user-mini-pr__image">
+															<img class="ibg" src="img/profile/fan/user.webp" alt="User">
+														</a>
+														<a href="#" class="user-mini-pr__title verif">
+															<span>Lexi Freeman</span>
+														</a>
+														<div class="user-mini-pr__username">
+															<a href="#">@lexigoddes1997</a>
+														</div>
+														<div class="user-mini-pr__rating _icon-star">
+															4.3
+														</div>
+													</div>
+													<div class="best-models-aside__settings icon-btn _icon-settings">
+
+													</div>
+												</div>
+												<div class="best-models-aside__item">
+													<div class="best-models-aside__user user-mini-pr user-mini-pr--rating">
+														<a href="#" class="user-mini-pr__image">
+															<img class="ibg" src="img/profile/fan/user.webp" alt="User">
+														</a>
+														<a href="#" class="user-mini-pr__title verif">
+															<span>Lexi Freeman</span>
+														</a>
+														<div class="user-mini-pr__username">
+															<a href="#">@lexigoddes1997</a>
+														</div>
+														<div class="user-mini-pr__rating _icon-star">
+															4.3
+														</div>
+													</div>
+													<div class="best-models-aside__settings icon-btn _icon-settings">
+
+													</div>
+												</div>
+												<div class="best-models-aside__item">
+													<div class="best-models-aside__user user-mini-pr user-mini-pr--rating">
+														<a href="#" class="user-mini-pr__image">
+															<img class="ibg" src="img/profile/fan/user.webp" alt="User">
+														</a>
+														<a href="#" class="user-mini-pr__title verif">
+															<span>Lexi Freeman</span>
+														</a>
+														<div class="user-mini-pr__username">
+															<a href="#">@lexigoddes1997</a>
+														</div>
+														<div class="user-mini-pr__rating _icon-star">
+															4.3
+														</div>
+													</div>
+													<div class="best-models-aside__settings icon-btn _icon-settings">
+
+													</div>
+												</div>
+												<div class="best-models-aside__item">
+													<div class="best-models-aside__user user-mini-pr user-mini-pr--rating">
+														<a href="#" class="user-mini-pr__image">
+															<img class="ibg" src="img/profile/fan/user.webp" alt="User">
+														</a>
+														<a href="#" class="user-mini-pr__title verif">
+															<span>Lexi Freeman</span>
+														</a>
+														<div class="user-mini-pr__username">
+															<a href="#">@lexigoddes1997</a>
+														</div>
+														<div class="user-mini-pr__rating _icon-star">
+															4.3
+														</div>
+													</div>
+													<div class="best-models-aside__settings icon-btn _icon-settings">
+
+													</div>
+												</div>
+												<div class="best-models-aside__item">
+													<div class="best-models-aside__user user-mini-pr user-mini-pr--rating">
+														<a href="#" class="user-mini-pr__image">
+															<img class="ibg" src="img/profile/fan/user.webp" alt="User">
+														</a>
+														<a href="#" class="user-mini-pr__title verif">
+															<span>Lexi Freeman</span>
+														</a>
+														<div class="user-mini-pr__username">
+															<a href="#">@lexigoddes1997</a>
+														</div>
+														<div class="user-mini-pr__rating _icon-star">
+															4.3
+														</div>
+													</div>
+													<div class="best-models-aside__settings icon-btn _icon-settings">
+
+													</div>
+												</div>
+												<div class="best-models-aside__item">
+													<div class="best-models-aside__user user-mini-pr user-mini-pr--rating">
+														<a href="#" class="user-mini-pr__image">
+															<img class="ibg" src="img/profile/fan/user.webp" alt="User">
+														</a>
+														<a href="#" class="user-mini-pr__title verif">
+															<span>Lexi Freeman</span>
+														</a>
+														<div class="user-mini-pr__username">
+															<a href="#">@lexigoddes1997</a>
+														</div>
+														<div class="user-mini-pr__rating _icon-star">
+															4.3
+														</div>
+													</div>
+													<div class="best-models-aside__settings icon-btn _icon-settings">
+
+													</div>
+												</div>
+												<div class="best-models-aside__item">
+													<div class="best-models-aside__user user-mini-pr user-mini-pr--rating">
+														<a href="#" class="user-mini-pr__image">
+															<img class="ibg" src="img/profile/fan/user.webp" alt="User">
+														</a>
+														<a href="#" class="user-mini-pr__title verif">
+															<span>Lexi Freeman</span>
+														</a>
+														<div class="user-mini-pr__username">
+															<a href="#">@lexigoddes1997</a>
+														</div>
+														<div class="user-mini-pr__rating _icon-star">
+															4.3
+														</div>
+													</div>
+													<div class="best-models-aside__settings icon-btn _icon-settings">
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<a href="#" class="best-models-aside__link">View More</a>
+									</div>
+								</div>
+							</details>
+						</div>
+						<div class="profile__boost-banner boost-banner boost-banner--agency">
+							<div class="boost-banner__title">
+								Skyrocket your models 🚀
+							</div>
+							<div class="boost-banner__desc">
+								Get your models seen by Fans —fast. Premium promotion, real results
 							</div>
 							<a href="#" class="boost-banner__button button button--white">
 								Boost My Reach 🚀

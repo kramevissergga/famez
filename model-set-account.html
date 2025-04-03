@@ -214,20 +214,13 @@
 							<div class="set-profile__header">
 								<a href="#" class="set-profile__back _icon-ch-right icon-btn"></a>
 								<h1 class="set-profile__title title">
-									Profile Settings
+									Account Settings
 								</h1>
 							</div>
 							<form action="#" method="post" enctype="multipart/form-data" class="set-profile__form">
-
-								<label class="set-profile__preview _icon-camera">
-									<input type="file" accept="image.webp, image.webp, image.webp, image.webp">
-								</label>
 								<div class="set-profile__body">
-									<label class="set-profile__pic _icon-camera">
-										<input type="file" accept="image.webp, image.webp, image.webp, image.webp">
-									</label>
 									<div class="set-profile__field field">
-										<div class="field__input _validated">
+										<div class="field__input">
 											<div class="field__label">
 												Username
 											</div>
@@ -240,73 +233,106 @@
 									<div class="set-profile__field field">
 										<div class="field__input">
 											<div class="field__label">
-												Display Name
+												EMAIL
 											</div>
-											<input value="Lexi Freeman" type="text" name="name" placeholder="">
-										</div>
-										<div class="field__length">
-											11/40
+											<input value="LexiFreeman@gmail.com" type="email" name="email" placeholder="">
 										</div>
 									</div>
+									<div class="set-profile__phone phone-input">
+										<div class="phone-input__aside">
+											<div class="phone-input__label">
+												phone
+											</div>
+											<select data-class-modif="flags">
+												<option value="1" data-asset="img/flags/germany.svg" selected></option>
+												<option data-asset="img/flags/germany.svg" value="2"></option>
+												<option data-asset="img/flags/germany.svg" value="3"></option>
+												<option data-asset="img/flags/germany.svg" value="4"></option>
+											</select>
+										</div>
+										<div class="phone-input__field field">
+											<div class="field__input">
+												<input type="text" name="email" placeholder="Phone Number">
+											</div>
+										</div>
+									</div>
+									<h2 class="set-profile__block-title">
+										Connected accounts
+									</h2>
 									<div class="set-profile__field field">
 										<div class="field__input">
 											<div class="field__label">
-												Bio
+												Additional famez account
 											</div>
-											<textarea name="bio" placeholder=""></textarea>
+											<input value="@" type="text" name="add-account" placeholder="">
 										</div>
-										<div class="field__length">
-											0/1000
+										<div class="field__text">
+											Enter account username you want to connect
+										</div>
+									</div>
+									<h2 class="set-profile__block-title">
+										Password
+									</h2>
+									<div class="set-profile__field field">
+										<div class="field__input field__input--password">
+											<div class="field__label">
+												CHANGE PASSWORD
+											</div>
+											<input value="123456789012345" type="password" name="password" placeholder="">
+											<button type="button" class="field__hide icon-btn _icon-eye"></button>
+										</div>
+										<div class="field__text field__text--green">
+											Password difficulty: <span>Good</span>
 										</div>
 									</div>
 									<div class="set-profile__field field">
-										<div class="field__input">
+										<div class="field__input field__input--password">
 											<div class="field__label">
-												Location
+												CONFIRM PASSWORD
 											</div>
-											<input type="text" name="location" placeholder="">
+											<input value="123456789012345" type="password" name="confirm-password" placeholder="">
+											<button type="button" class="field__hide icon-btn _icon-eye"></button>
 										</div>
 									</div>
-									<div class="set-profile__field field">
-										<div class="field__input">
-											<div class="field__label">
-												Amazon wish list
-											</div>
-											<input type="text" name="wishlist" placeholder="">
+									<h2 class="set-profile__block-title">
+										Account management
+									</h2>
+									<div class="set-profile__data get-data">
+										<div class="get-data__body">
+											<h3>
+												Download my data
+											</h3>
+											<p>
+												Save all your data before any manipulations with your account
+											</p>
 										</div>
+										<button type="button" class="get-data__button _icon-download button button--border button--pink-border">
+											Download
+										</button>
 									</div>
-									<div class="set-profile__websites websites-inputs">
-										<div class="websites-inputs__item">
-											<div class="websites-inputs__field field">
+									<div class="set-profile__delete delete-account">
+										<div class="delete-account__body">
+											<div class="delete-account__title">
+												Delete account
+											</div>
+											<div class="delete-account__captcha">
+												<img src="img/profile/captcha.webp" alt="Image" class="ibg">
+											</div>
+											<div class="delete-account__field field">
 												<div class="field__input">
-													<div class="field__label">
-														Website URL 1
-													</div>
-													<input type="text" name="websites[0]website" placeholder="">
+													<input type="text" name="code" placeholder="Verification Code">
 												</div>
 											</div>
-											<button type="button" class="websites-inputs__add button _icon-plus">
+											<button class="delete-account__button button button--border button--pink-border">
+												Delete Account
 											</button>
 										</div>
-									</div>
-									<div class="set-profile__pass upload">
-										<h5 class="upload__title">
-											Upload ID
-										</h5>
-										<div class="upload__subtitle">
-											Upload your documents materials
-										</div>
-										<label class="upload__input input-upload _icon-picture">
-											<input type="file" accept="image.webp, image.webp, image.webp, image.webp">
-											<div class="input-upload__body">
-												<div class="input-upload__title">
-													Add Picture
-												</div>
-												<div class="input-upload__label">
-													Max size: 5MB, Formats: JPG, PNG, GIF
-												</div>
+										<div class="delete-account__footer">
+											<button type="button" class="delete-account__reload">Reload Code</button>
+											<div class="delete-account__label">
+												This will permanently delete your account!
 											</div>
-										</label>
+										</div>
 									</div>
 									<button class="set-profile__submit button">
 										Save Changes
