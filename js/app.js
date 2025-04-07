@@ -3903,6 +3903,31 @@
             if (prevArrow) prevArrow.addEventListener("click", (() => splideInstance.go("<")));
             if (nextArrow) nextArrow.addEventListener("click", (() => splideInstance.go(">")));
         }));
+        var modelsPrSliderEl = document.querySelector(".models-profile__slider");
+        if (modelsPrSliderEl) {
+            var modelsPrSlider = new Splide(modelsPrSliderEl, {
+                perPage: 2,
+                arrows: false,
+                pagination: true,
+                gap: 10,
+                destroy: true,
+                breakpoints: {
+                    767.98: {
+                        destroy: false
+                    },
+                    549.98: {
+                        perPage: 1,
+                        padding: {
+                            right: `30%`
+                        }
+                    },
+                    399.98: {
+                        padding: 0
+                    }
+                }
+            });
+            modelsPrSlider.mount();
+        }
     }));
     function isObject_isObject(value) {
         var type = typeof value;
@@ -5133,6 +5158,8 @@
     window.addEventListener("load", (function() {
         updateHeaderHeights();
     }));
+    const searchComp = document.querySelector("[data-search-comp]");
+    if (searchComp) _slideUp(searchComp);
     document.addEventListener("DOMContentLoaded", (function() {
         document.addEventListener("click", (function(e) {
             if (e.target.closest(".video__button")) {
@@ -5192,7 +5219,7 @@
                     menuProfile ? closeProfileMenu(menuProfile) : null;
                 }
             } else document.querySelector(".header__profile")?.classList.remove("_active");
-            if (e.target.classList.contains("field__hide")) {
+            if (e.target.closest("field__hide")) {
                 const button = e.target;
                 const fieldContainer = button.closest(".field__input");
                 const input = fieldContainer.querySelector("input");
@@ -5204,6 +5231,13 @@
                     input.type = "password";
                     button.classList.remove("_icon-eye-hide");
                     button.classList.add("_icon-eye");
+                }
+            }
+            if (e.target.closest("[data-search-toggle]")) {
+                const button = e.target;
+                if (searchComp) {
+                    button.classList.toggle("_active");
+                    _slideToggle(searchComp);
                 }
             }
         }));
