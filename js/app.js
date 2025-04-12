@@ -5161,6 +5161,9 @@
     const searchComp = document.querySelector("[data-search-comp]");
     if (searchComp) _slideUp(searchComp);
     document.addEventListener("DOMContentLoaded", (function() {
+        document.querySelectorAll(".comments-block")?.forEach((item => {
+            _slideUp(item, 0);
+        }));
         document.addEventListener("click", (function(e) {
             if (e.target.closest(".video__button")) {
                 const button = e.target.closest(".video__button");
@@ -5233,12 +5236,11 @@
                     button.classList.add("_icon-eye");
                 }
             }
-            if (e.target.closest("[data-search-toggle]")) {
+            if (e.target.closest("[data-comments-btn]")) {
                 const button = e.target;
-                if (searchComp) {
-                    button.classList.toggle("_active");
-                    _slideToggle(searchComp);
-                }
+                const container = button.closest(".post-block");
+                const block = container.querySelector(".comments-block");
+                if (block) _slideToggle(block);
             }
         }));
     }));
