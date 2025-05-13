@@ -735,15 +735,18 @@ body:has(.menu-profile--open)::after {
   font-size: 1.125rem;
   line-height: 1.5
 }
+.text h1,
 .text h2,
 .text h3 {
   font-family: Unbounded,sans-serif;
   font-size: 1.5rem
 }
+.text h1:not(:last-child),
 .text h2:not(:last-child),
 .text h3:not(:last-child) {
   margin-bottom: .9375rem
 }
+.text h1 span,
 .text h2 span,
 .text h3 span {
   color: #ee5f96
@@ -1447,6 +1450,25 @@ body:has(.menu-profile--open)::after {
   overflow: hidden;
   border: .125rem solid #fff;
   transition: all .3s
+}
+.breadcrumbs ul {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 150%;
+  white-space: nowrap;
+  min-width: 0;
+  color: rgba(143,154,167,.5)
+}
+.breadcrumbs ul li {
+  display: inline
+}
+.breadcrumbs ul li:not(:last-child)::after {
+  content: " / "
+}
+.breadcrumbs ul li a {
+  display: inline;
+  color: #ee5f96;
+  transition: color .3s
 }
 .header {
   padding: .8125rem 1.875rem;
@@ -5104,6 +5126,150 @@ body:has(.menu-profile--open)::after {
 .full-model-item__button svg path {
   transition: all .3s
 }
+.faq-profile__hero:not(:last-child) {
+  margin-bottom: 1.25rem
+}
+.faq-profile__body {
+  padding: .625rem 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: .9375rem;
+  border-radius: 1rem;
+  background: #fff
+}
+.faq-profile__title {
+  font-size: 1.125rem;
+  text-align: left;
+  border-bottom: .0625rem solid rgba(0,0,0,.1019607843);
+  padding-bottom: .9375rem
+}
+.faq-profile__block:not(:last-child) {
+  border-bottom: .0625rem solid rgba(0,0,0,.1019607843);
+  padding-bottom: .9375rem
+}
+.faq-profile__block-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5
+}
+.faq-profile__block-title:not(:last-child) {
+  margin-bottom: .9375rem
+}
+.faq-profile__list {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: start;
+  gap: .9375rem 1.25rem
+}
+.faq-profile__list li {
+  color: #ee5f96;
+  font-size: .875rem;
+  font-weight: 700;
+  display: flex;
+  gap: .5625rem;
+  align-items: start;
+  flex-shrink: 0;
+  line-height: 1.2
+}
+.faq-profile__list li::before {
+  content: "";
+  width: .3125rem;
+  height: .3125rem;
+  border-radius: 50%;
+  background-color: #ee5f96;
+  flex-shrink: 0;
+  margin-top: .3125rem
+}
+.faq-profile__list li a {
+  transition: all .3s
+}
+.faq-profile__breadcrumbs {
+  padding-bottom: .9375rem;
+  border-bottom: .0625rem solid rgba(0,0,0,.1019607843)
+}
+.faq-profile__text {
+  padding: .625rem 0
+}
+.faq-profile__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .9375rem
+}
+.faq-profile__button {
+  padding: .875rem 1.25rem
+}
+.hero-faq {
+  padding: 1.875rem .625rem;
+  border-radius: .75rem;
+  border: .0625rem solid #ff9bc2;
+  background: linear-gradient(90deg,#ee5f96 0,#ffa0c5 100%);
+  display: flex;
+  justify-content: center
+}
+.hero-faq__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 34.25rem;
+  gap: 1rem;
+  flex-grow: 1
+}
+.hero-faq__header {
+  display: flex;
+  align-items: center;
+  gap: .3125rem
+}
+.hero-faq__back::before {
+  -webkit-transform: scale(-1,1);
+  transform: scale(-1,1);
+  color: #fff
+}
+.hero-faq__title {
+  font-size: 1.125rem;
+  color: #fff;
+  text-align: left
+}
+.hero-faq__search {
+  position: relative;
+  width: 100%
+}
+.hero-faq__search input {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: .625rem 1.25rem;
+  border-radius: .75rem;
+  border: .0625rem solid hsla(0,0%,100%,.3);
+  padding-right: 2.5rem
+}
+.hero-faq__search input::-webkit-input-placeholder {
+  color: #fff
+}
+.hero-faq__search input:-ms-input-placeholder {
+  color: #fff
+}
+.hero-faq__search input::-ms-input-placeholder {
+  color: #fff
+}
+.hero-faq__search input::placeholder {
+  color: #fff
+}
+.hero-faq__search-btn {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 50%;
+  right: .5rem;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+.hero-faq__search-btn svg {
+  width: 100%;
+  height: 100%
+}
+.hero-faq__search-btn svg path {
+  transition: all .3s
+}
 .splide__container {
   box-sizing: border-box;
   position: relative
@@ -6050,6 +6216,7 @@ body:has(.menu-profile--open)::after {
   .text {
     font-size: 1rem
   }
+  .text h1,
   .text h2,
   .text h3 {
     font-size: 1.125rem
@@ -6335,6 +6502,39 @@ body:has(.menu-profile--open)::after {
   .our-models__part-items {
     gap: .9375rem
   }
+  .faq-profile__body {
+    padding: .625rem .625rem 1.25rem
+  }
+  .faq-profile .menu-profile {
+    display: flex;
+    gap: .625rem 1.25rem;
+    flex-wrap: wrap;
+    padding: 1.25rem .625rem;
+    margin: 0
+  }
+  .faq-profile .menu-profile:not(:last-child) {
+    margin-bottom: 1.25rem
+  }
+  .faq-profile .menu-profile__item {
+    flex-grow: 1;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0
+  }
+  .faq-profile .menu-profile__item:not(:last-child) {
+    margin-bottom: 0
+  }
+  .faq-profile .menu-profile__counter {
+    display: none
+  }
+  .faq-profile .menu-profile__button {
+    flex: 0 0 100%;
+    font-size: 1.125rem;
+    padding: .8125rem 1.25rem
+  }
+  .hero-faq__title {
+    font-size: 1rem
+  }
 }
 @media (max-width:43.74875em) {
   .roadmap-home__body {
@@ -6540,8 +6740,17 @@ body:has(.menu-profile--open)::after {
   .item-msg__text {
     font-size: 1rem
   }
+  .profile__faq {
+    margin: 0 -.625rem
+  }
+  .faq-profile__list {
+    grid-template-columns: 1fr
+  }
 }
 @media (max-width:24.99875em) {
+  .breadcrumbs ul li {
+    font-size: .875rem
+  }
   .hero-home__link {
     min-width: 0;
     width: 100%
@@ -6896,6 +7105,9 @@ body:has(.menu-profile--open)::after {
   a.picture-profile:hover img {
     border-color: #ee5f96
   }
+  .breadcrumbs ul li a:hover {
+    color: #000
+  }
   .header__wallet:hover {
     color: #ee5f96;
     background-color: rgba(238,95,150,.3);
@@ -7085,6 +7297,18 @@ body:has(.menu-profile--open)::after {
   }
   .full-model-item__button:hover svg path {
     stroke: #ee5f96
+  }
+  .faq-profile__list li a:hover {
+    color: #000
+  }
+  .hero-faq__back:not(:disabled):hover {
+    background-color: #fff
+  }
+  .hero-faq__back:not(:disabled):hover::before {
+    color: #ee5f96
+  }
+  .hero-faq__search-btn:hover svg path {
+    stroke-opacity: 1
   }
 }
 @media screen and (-ms-high-contrast:none) {
