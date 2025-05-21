@@ -199,7 +199,7 @@
                         spoilerTitle.removeAttribute("tabindex");
                         if (!spoilerItem.hasAttribute("data-open")) {
                             spoilerItem.open = false;
-                            spoilerTitle.nextElementSibling.hidden = true;
+                            if (spoilerTitle.nextElementSibling) spoilerTitle.nextElementSibling.hidden = true;
                         } else {
                             spoilerTitle.classList.add("_spoiler-active");
                             spoilerItem.open = true;
@@ -208,7 +208,7 @@
                         spoilerTitle.setAttribute("tabindex", "-1");
                         spoilerTitle.classList.remove("_spoiler-active");
                         spoilerItem.open = true;
-                        spoilerTitle.nextElementSibling.hidden = false;
+                        if (spoilerTitle.nextElementSibling) spoilerTitle.nextElementSibling.hidden = false;
                     }
                 }));
             }
@@ -216,10 +216,11 @@
                 const el = e.target;
                 if (el.closest("summary") && el.closest("[data-spoilers]")) {
                     e.preventDefault();
-                    if (el.closest("[data-spoilers]").classList.contains("_spoiler-init")) {
-                        const spoilerTitle = el.closest("summary");
-                        const spoilerBlock = spoilerTitle.closest("details");
-                        const spoilersBlock = spoilerTitle.closest("[data-spoilers]");
+                    const spoilerTitle = el.closest("summary");
+                    const spoilerBlock = spoilerTitle.closest("details");
+                    const spoilersBlock = spoilerTitle.closest("[data-spoilers]");
+                    if (!spoilerTitle.nextElementSibling) return;
+                    if (spoilersBlock.classList.contains("_spoiler-init")) {
                         const onespoiler = spoilersBlock.hasAttribute("data-one-spoiler");
                         const scrollspoiler = spoilerBlock.hasAttribute("data-spoiler-scroll");
                         const spoilerSpeed = spoilersBlock.dataset.spoilersSpeed ? parseInt(spoilersBlock.dataset.spoilersSpeed) : 500;
@@ -252,7 +253,7 @@
                             const spoilerSpeed = spoilersBlock.dataset.spoilersSpeed ? parseInt(spoilersBlock.dataset.spoilersSpeed) : 500;
                             spoilerClose.classList.remove("_spoiler-active");
                             let direction = spoilersBlock.closest("[data-hrz]") && window.matchMedia("(min-width: 68.74875em)").matches ? "horizontal" : "vertical";
-                            _slideUp(spoilerItem.open ? spoilerTitle.nextElementSibling : null, 500, direction);
+                            _slideUp(spoilerCloseBlock.open ? spoilerClose.nextElementSibling : null, 500, direction);
                             setTimeout((() => {
                                 spoilerCloseBlock.open = false;
                             }), spoilerSpeed);
@@ -264,6 +265,7 @@
                 const spoilerActiveBlock = spoilersBlock.querySelector("details[open]");
                 if (spoilerActiveBlock && !spoilersBlock.querySelectorAll("._slide").length) {
                     const spoilerActiveTitle = spoilerActiveBlock.querySelector("summary");
+                    if (!spoilerActiveTitle.nextElementSibling) return;
                     const spoilerSpeed = spoilersBlock.dataset.spoilersSpeed ? parseInt(spoilersBlock.dataset.spoilersSpeed) : 500;
                     spoilerActiveTitle.classList.remove("_spoiler-active");
                     let direction = spoilersBlock.closest("[data-hrz]") && window.matchMedia("(min-width: 68.74875em)").matches ? "horizontal" : "vertical";
@@ -5240,6 +5242,12 @@
                 const button = e.target;
                 const container = button.closest(".post-block");
                 const block = container.querySelector(".comments-block");
+                if (block) _slideToggle(block);
+            }
+            if (e.target.closest("[data-search-toggle]")) {
+                const button = e.target;
+                const container = button.closest(".set-profile");
+                const block = container.querySelector("[data-search-comp]");
                 if (block) _slideToggle(block);
             }
         }));

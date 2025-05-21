@@ -157,7 +157,7 @@
 			<div class="page__profile profile">
 				<div class="profile__container">
 					<div class="profile__left">
-						<div data-da=".profile__body, 899.98, first" class="profile__menu menu-profile">
+						<div class="profile__menu menu-profile">
 							<div class="menu-profile__header menu-profile__header--border">
 								<div class="menu-profile__user user-mini-pr">
 									<a href="#" class="user-mini-pr__image _online">
@@ -195,7 +195,7 @@
 							<a href="#" class="menu-profile__item">
 								<span>Interface</span>
 							</a>
-							<div class="menu-profile__set-access set-access">
+							<div data-da=".set-profile, 768, 1" class="menu-profile__set-access set-access">
 								<button class="set-access__close _icon-cross"></button>
 								<h5 class="set-access__title">
 									Tired of managing your profile? 🥱
@@ -210,112 +210,243 @@
 						</div>
 					</div>
 					<div class="profile__body">
-						<section class="profile__set set-profile">
+						<section class="profile__set set-profile set-profile--wallet">
 							<div class="set-profile__header">
 								<a href="#" class="set-profile__back _icon-ch-right icon-btn"></a>
 								<h1 class="set-profile__title title">
-									Profile Settings
+									My Wallet
 								</h1>
 							</div>
-							<form action="#" method="post" enctype="multipart/form-data" class="set-profile__form">
+							<div data-da="{.profile__body}, 768, last" class="set-profile__wallet wallet">
+								<div class="wallet__header">
+									<h2 class="wallet__title">
+										My Transactions
+									</h2>
+									<div class="wallet__sort sort-wallet">
+										<div class="sort-wallet__label">
+											1/22/2024 - 2/22/2025
+										</div>
+										<button class="sort-wallet__button icon-btn _icon-sort">
 
-								<label class="set-profile__preview _icon-camera">
-									<input type="file" accept="image.webp, image.webp, image.webp, image.webp">
-								</label>
-								<div class="set-profile__body">
-									<label class="set-profile__pic _icon-camera">
-										<input type="file" accept="image.webp, image.webp, image.webp, image.webp">
-									</label>
-									<div class="set-profile__field field">
-										<div class="field__input _validated">
-											<div class="field__label">
-												Username
-											</div>
-											<input value="@lexigoddes1997" type="text" name="username" placeholder="">
-										</div>
-										<a href="#" class="field__link">
-											https://famez.com/lexigoddes1997
-										</a>
+										</button>
 									</div>
-									<div class="set-profile__field field">
-										<div class="field__input">
-											<div class="field__label">
-												Display Name
-											</div>
-											<input value="Lexi Freeman" type="text" name="name" placeholder="">
-										</div>
-										<div class="field__length">
-											11/40
-										</div>
-									</div>
-									<div class="set-profile__field field">
-										<div class="field__input">
-											<div class="field__label">
-												Bio
-											</div>
-											<textarea name="bio" placeholder=""></textarea>
-										</div>
-										<div class="field__length">
-											0/1000
-										</div>
-									</div>
-									<div class="set-profile__field field">
-										<div class="field__input">
-											<div class="field__label">
-												Location
-											</div>
-											<input type="text" name="location" placeholder="">
-										</div>
-									</div>
-									<div class="set-profile__field field">
-										<div class="field__input">
-											<div class="field__label">
-												Amazon wish list
-											</div>
-											<input type="text" name="wishlist" placeholder="">
-										</div>
-									</div>
-									<div class="set-profile__websites websites-inputs">
-										<div class="websites-inputs__item">
-											<div class="websites-inputs__field field">
-												<div class="field__input">
-													<div class="field__label">
-														Website URL 1
-													</div>
-													<input type="text" name="websites[0]website" placeholder="">
-												</div>
-											</div>
-											<button type="button" class="websites-inputs__add button _icon-plus">
-											</button>
-										</div>
-									</div>
-									<div class="set-profile__pass upload">
-										<h5 class="upload__title">
-											Upload ID
-										</h5>
-										<div class="upload__subtitle">
-											Upload your documents materials
-										</div>
-										<label class="upload__input input-upload _icon-picture">
-											<input type="file" accept="image.webp, image.webp, image.webp, image.webp">
-											<div class="input-upload__body">
-												<div class="input-upload__title">
-													Add Picture
-												</div>
-												<div class="input-upload__label">
-													Max size: 5MB, Formats: JPG, PNG, GIF
-												</div>
-											</div>
-										</label>
-									</div>
-									<button class="set-profile__submit button">
-										Save Changes
-									</button>
 								</div>
-							</form>
+								<div data-spoilers class="wallet__spoilers sp-wallet">
+									<details class="sp-wallet__item">
+										<summary class="sp-wallet__summary">
+											<div class="sp-wallet__header _icon-ch-right">
+												<div class="sp-wallet__date">
+													3 April, 2025
+												</div>
+											</div>
+											<div class="sp-wallet__info">
+												<div class="sp-wallet__label">
+													New Subscription
+												</div>
+												<div class="sp-wallet__accent">
+													+ €200
+												</div>
+											</div>
+										</summary>
+										<div class="sp-wallet__body">
+											<div class="sp-wallet__details">
+												<div class="sp-wallet__user">
+													<div class="sp-wallet__username verif">
+														Dimirty
+													</div>
+													<div class="sp-wallet__user-id">
+														@dimm
+													</div>
+												</div>
+												has subscribed to you
+											</div>
+										</div>
+									</details>
+									<details class="sp-wallet__item">
+										<summary class="sp-wallet__summary">
+											<div class="sp-wallet__header _icon-ch-right">
+												<div class="sp-wallet__date">
+													2 March, 2025
+												</div>
+											</div>
+											<div class="sp-wallet__info">
+												<div class="sp-wallet__label">
+													Depositing funds
+												</div>
+												<div style="color: #2C95FF;" class="sp-wallet__accent">
+													+ €200
+												</div>
+											</div>
+										</summary>
+									</details>
+									<details class="sp-wallet__item">
+										<summary class="sp-wallet__summary">
+											<div class="sp-wallet__header _icon-ch-right">
+												<div class="sp-wallet__date">
+													1 February, 2025
+												</div>
+											</div>
+											<div class="sp-wallet__info">
+												<div class="sp-wallet__label">
+													Buying a profile banner
+												</div>
+												<div style="color: #FF0004;" class="sp-wallet__accent">
+													- €20
+												</div>
+											</div>
+										</summary>
+									</details>
+									<details class="sp-wallet__item">
+										<summary class="sp-wallet__summary">
+											<div class="sp-wallet__header _icon-ch-right">
+												<div class="sp-wallet__date">
+													3 April, 2025
+												</div>
+											</div>
+											<div class="sp-wallet__info">
+												<div class="sp-wallet__label">
+													Depositing funds
+												</div>
+												<div style="color: #2C95FF;" class="sp-wallet__accent">
+													+ €100
+												</div>
+											</div>
+										</summary>
+										<div class="sp-wallet__body">
+											<div class="sp-wallet__details">
+												<b>
+													From
+												</b>
+												4441 0992 9000 *****
+											</div>
+										</div>
+									</details>
+									<details class="sp-wallet__item">
+										<summary class="sp-wallet__summary">
+											<div class="sp-wallet__header _icon-ch-right">
+												<div class="sp-wallet__date">
+													22 Drcember, 2024
+												</div>
+											</div>
+											<div class="sp-wallet__info">
+												<div class="sp-wallet__label">
+													Custom Content Purchase
+												</div>
+												<div class="sp-wallet__accent">
+													+ €300
+												</div>
+											</div>
+										</summary>
+									</details>
+									<details class="sp-wallet__item">
+										<summary class="sp-wallet__summary">
+											<div class="sp-wallet__header _icon-ch-right">
+												<div class="sp-wallet__date">
+													22 December, 2024
+												</div>
+											</div>
+											<div class="sp-wallet__info">
+												<div class="sp-wallet__label">
+													Post Purchase
+												</div>
+												<div class="sp-wallet__accent">
+													+ €300
+												</div>
+											</div>
+										</summary>
+									</details>
+									<details class="sp-wallet__item">
+										<summary class="sp-wallet__summary">
+											<div class="sp-wallet__header _icon-ch-right">
+												<div class="sp-wallet__date">
+													12 December, 2024
+												</div>
+											</div>
+											<div class="sp-wallet__info">
+												<div class="sp-wallet__label">
+													Buying a profile banner
+												</div>
+												<div style="color: #FF0004;" class="sp-wallet__accent">
+													- €20
+												</div>
+											</div>
+										</summary>
+									</details>
+									<details class="sp-wallet__item">
+										<summary class="sp-wallet__summary">
+											<div class="sp-wallet__header _icon-ch-right">
+												<div class="sp-wallet__date">
+													9 December, 2024
+												</div>
+											</div>
+											<div class="sp-wallet__info">
+												<div class="sp-wallet__label">
+													Ordering Promo
+												</div>
+												<div style="color: #FF0004;" class="sp-wallet__accent">
+													- €120
+												</div>
+											</div>
+										</summary>
+									</details>
+								</div>
+							</div>
 						</section>
 					</div>
 					<div class="profile__right">
+						<div data-da=".set-profile, 768, 1" class="profile__add-funds add-funds">
+							<div class="add-funds__header">
+								<span>€200</span>
+								Сredits on your wallet
+							</div>
+							<div class="add-funds__body">
+								<h5 class="add-funds__title">
+									Quick Top-Up Options ⚡
+								</h5>
+								<div class="add-funds__label">
+									Add funds to your wallet
+								</div>
+							</div>
+							<form action="#" class="add-funds__form">
+								<div class="add-funds__fields">
+									<label class="add-funds__radio">
+										<input type="radio" name="add-funds">
+										€5.00
+									</label>
+									<label class="add-funds__radio">
+										<input type="radio" name="add-funds">
+										€10.00
+									</label>
+									<label class="add-funds__radio">
+										<input type="radio" name="add-funds">
+										€20.00
+									</label>
+									<label class="add-funds__radio">
+										<input type="radio" name="add-funds">
+										€50.00
+									</label>
+									<label class="add-funds__radio">
+										<input type="radio" name="add-funds">
+										€100.00
+									</label>
+									<label class="add-funds__radio">
+										<input type="radio" name="add-funds">
+										€200.00
+									</label>
+									<div class="add-funds__field field">
+										<div class="field__input">
+											<div class="field__label">
+												Enter your amount
+											</div>
+											<input type="text" placeholder="">
+										</div>
+									</div>
+								</div>
+								<button class="add-funds__button button _icon-plus">
+									Add Funds
+								</button>
+							</form>
+						</div>
 						<div class="profile__boost-banner boost-banner">
 							<div class="boost-banner__text">
 								Your profile has already been viewed <b>12,544 times</b>
