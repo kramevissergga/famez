@@ -195,7 +195,7 @@
 							<a href="#" class="menu-profile__item">
 								<span>Interface</span>
 							</a>
-							<div data-da=".set-profile, 768, 1" class="menu-profile__set-access set-access">
+							<div class="menu-profile__set-access set-access">
 								<button class="set-access__close _icon-cross"></button>
 								<h5 class="set-access__title">
 									Tired of managing your profile? 🥱
@@ -210,243 +210,189 @@
 						</div>
 					</div>
 					<div class="profile__body">
-						<section class="profile__set set-profile set-profile--wallet">
+						<section class="profile__set set-profile">
 							<div class="set-profile__header">
 								<a href="#" class="set-profile__back _icon-ch-right icon-btn"></a>
 								<h1 class="set-profile__title title">
-									My Wallet
+									Privacy and Safety
 								</h1>
 							</div>
-							<div data-da="{.profile__body}, 768, last" class="set-profile__wallet wallet">
-								<div class="wallet__header">
-									<h2 class="wallet__title">
-										My Transactions
+							<div class="set-profile__safety safety">
+								<div class="safety__block">
+									<h2 class="safety__block-title title-boost">
+										Account info
 									</h2>
-									<div class="wallet__sort sort-wallet">
-										<div class="sort-wallet__label">
-											1/22/2024 - 2/22/2025
+									<div class="safety__switch switch-safety">
+										<div class="switch-safety__label">
+											Show activity status
 										</div>
-										<button class="sort-wallet__button icon-btn _icon-sort">
-
-										</button>
+										<label class="toggle">
+											<input checked type="checkbox">
+										</label>
+									</div>
+									<div class="safety__switch switch-safety">
+										<div class="switch-safety__label">
+											Show subscription offers
+										</div>
+										<label class="toggle">
+											<input checked type="checkbox">
+										</label>
 									</div>
 								</div>
-								<div data-spoilers class="wallet__spoilers sp-wallet">
-									<details class="sp-wallet__item">
-										<summary class="sp-wallet__summary">
-											<div class="sp-wallet__header _icon-ch-right">
-												<div class="sp-wallet__date">
-													3 April, 2025
-												</div>
-											</div>
-											<div class="sp-wallet__info">
-												<div class="sp-wallet__label">
-													New Subscription
-												</div>
-												<div class="sp-wallet__accent">
-													+ €200
-												</div>
-											</div>
-										</summary>
-										<div class="sp-wallet__body">
-											<div class="sp-wallet__details">
-												<div class="sp-wallet__user">
-													<div class="sp-wallet__username verif">
-														Dimirty
+								<div data-spoilers class="safety__block">
+									<h2 class="safety__block-title safety__block-title--border title-boost">
+										Security
+									</h2>
+									<details data-open="" class="safety__spoiler spoiler-safety">
+										<summary class="spoiler-safety__title _icon-ch-right">Login sessions</summary>
+										<div class="spoiler-safety__body">
+											<div class="safety-sessions">
+												<div class="safety-sessions__item session-safety">
+													<div class="session-safety__body">
+														<h3 class="session-safety__title">
+															Chrome 134.0, Windows 10
+														</h3>
+														<div class="session-safety__label">
+															104.68.192.91
+														</div>
 													</div>
-													<div class="sp-wallet__user-id">
-														@dimm
+													<div class="session-safety__status _active">
+														Active Now
 													</div>
 												</div>
-												has subscribed to you
+												<div class="safety-sessions__item session-safety">
+													<div class="session-safety__body">
+														<h3 class="session-safety__title">
+															Chrome 134.0, Windows 10
+														</h3>
+														<div class="session-safety__label">
+															104.68.192.91
+														</div>
+													</div>
+													<div class="session-safety__status">
+														3/14/25 4:07 pm
+													</div>
+												</div>
+												<div class="safety-sessions__item session-safety">
+													<div class="session-safety__body">
+														<h3 class="session-safety__title">
+															Chrome 134.0, Windows 10
+														</h3>
+														<div class="session-safety__label">
+															104.68.192.91
+														</div>
+													</div>
+													<div class="session-safety__status">
+														3/13/25 10:52 pm
+
+													</div>
+												</div>
+												<button class="safety-sessions__button button button--border">
+													Close All Sessions
+												</button>
 											</div>
 										</div>
 									</details>
-									<details class="sp-wallet__item">
-										<summary class="sp-wallet__summary">
-											<div class="sp-wallet__header _icon-ch-right">
-												<div class="sp-wallet__date">
-													2 March, 2025
+									<details data-open="" class="safety__spoiler spoiler-safety">
+										<summary class="spoiler-safety__title _icon-ch-right"><b>Two Step Authentication</b></summary>
+										<div class="spoiler-safety__body">
+											<div class="two-step">
+												<div class="two-step__block">
+													<div class="two-step__switch switch-safety">
+														<div class="switch-safety__label">
+															Authenticator App
+														</div>
+														<label class="toggle">
+															<input checked type="checkbox">
+														</label>
+													</div>
+													<div class="two-step__body">
+														<div class="two-step__aside">
+															<div class="two-step__qr">
+																<img src="img/qr.webp" alt="Image" class="ibg ibg--contain">
+															</div>
+															<div class="two-step__key">
+																Y4B5WJRAR7FCBJZ5
+															</div>
+															<button type="button" class="two-step__button button button--border">
+																Copy Key
+															</button>
+														</div>
+														<div class="two-step__content">
+															<div class="two-step__text">
+																<ol>
+																	<li>
+																		Download and install Microsoft or Google Authenticator app from <a href="#">Google
+																			Play</a> or <a href="#">App Store</a>
+																	</li>
+																	<li>
+																		In Microsoft or Google Authenticator app open “Settings“ and select “Set up account“
+																	</li>
+																	<li>
+																		Select “Scan a barcode“ or “Enter provided key“
+																	</li>
+																	<li>
+																		Enter code from your Microsoft or Google Authenticator
+																	</li>
+																</ol>
+															</div>
+															<div class="two-step__code-input">
+																<div class="two-step__code-field field">
+																	<div class="field__input">
+																		<div class="field__label">
+																			Authenticator Code
+																		</div>
+																		<input type="password" name="address" placeholder="">
+																	</div>
+																</div>
+																<button class="two-step__code-btn button">
+																	Enable
+																</button>
+															</div>
+														</div>
+													</div>
+													<div class="two-step__block">
+														<div class="two-step__switch switch-safety">
+															<div class="switch-safety__label">
+																Verification via SMS
+															</div>
+															<label class="toggle">
+																<input checked type="checkbox">
+															</label>
+														</div>
+														<div class="set-profile__phone phone-input">
+															<div class="phone-input__aside">
+																<div class="phone-input__label">
+																	phone
+																</div>
+																<select data-class-modif="flags">
+																	<option value="1" data-asset="img/flags/germany.svg" selected></option>
+																	<option data-asset="img/flags/germany.svg" value="2"></option>
+																	<option data-asset="img/flags/germany.svg" value="3"></option>
+																	<option data-asset="img/flags/germany.svg" value="4"></option>
+																</select>
+															</div>
+															<div class="phone-input__field field">
+																<div class="field__input">
+																	<input type="text" name="email" placeholder="Phone Number">
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
-											</div>
-											<div class="sp-wallet__info">
-												<div class="sp-wallet__label">
-													Depositing funds
-												</div>
-												<div style="color: #2C95FF;" class="sp-wallet__accent">
-													+ €200
-												</div>
-											</div>
-										</summary>
-									</details>
-									<details class="sp-wallet__item">
-										<summary class="sp-wallet__summary">
-											<div class="sp-wallet__header _icon-ch-right">
-												<div class="sp-wallet__date">
-													1 February, 2025
-												</div>
-											</div>
-											<div class="sp-wallet__info">
-												<div class="sp-wallet__label">
-													Buying a profile banner
-												</div>
-												<div style="color: #FF0004;" class="sp-wallet__accent">
-													- €20
-												</div>
-											</div>
-										</summary>
-									</details>
-									<details class="sp-wallet__item">
-										<summary class="sp-wallet__summary">
-											<div class="sp-wallet__header _icon-ch-right">
-												<div class="sp-wallet__date">
-													3 April, 2025
-												</div>
-											</div>
-											<div class="sp-wallet__info">
-												<div class="sp-wallet__label">
-													Depositing funds
-												</div>
-												<div style="color: #2C95FF;" class="sp-wallet__accent">
-													+ €100
-												</div>
-											</div>
-										</summary>
-										<div class="sp-wallet__body">
-											<div class="sp-wallet__details">
-												<b>
-													From
-												</b>
-												4441 0992 9000 *****
+
 											</div>
 										</div>
 									</details>
-									<details class="sp-wallet__item">
-										<summary class="sp-wallet__summary">
-											<div class="sp-wallet__header _icon-ch-right">
-												<div class="sp-wallet__date">
-													22 Drcember, 2024
-												</div>
-											</div>
-											<div class="sp-wallet__info">
-												<div class="sp-wallet__label">
-													Custom Content Purchase
-												</div>
-												<div class="sp-wallet__accent">
-													+ €300
-												</div>
-											</div>
-										</summary>
-									</details>
-									<details class="sp-wallet__item">
-										<summary class="sp-wallet__summary">
-											<div class="sp-wallet__header _icon-ch-right">
-												<div class="sp-wallet__date">
-													22 December, 2024
-												</div>
-											</div>
-											<div class="sp-wallet__info">
-												<div class="sp-wallet__label">
-													Post Purchase
-												</div>
-												<div class="sp-wallet__accent">
-													+ €300
-												</div>
-											</div>
-										</summary>
-									</details>
-									<details class="sp-wallet__item">
-										<summary class="sp-wallet__summary">
-											<div class="sp-wallet__header _icon-ch-right">
-												<div class="sp-wallet__date">
-													12 December, 2024
-												</div>
-											</div>
-											<div class="sp-wallet__info">
-												<div class="sp-wallet__label">
-													Buying a profile banner
-												</div>
-												<div style="color: #FF0004;" class="sp-wallet__accent">
-													- €20
-												</div>
-											</div>
-										</summary>
-									</details>
-									<details class="sp-wallet__item">
-										<summary class="sp-wallet__summary">
-											<div class="sp-wallet__header _icon-ch-right">
-												<div class="sp-wallet__date">
-													9 December, 2024
-												</div>
-											</div>
-											<div class="sp-wallet__info">
-												<div class="sp-wallet__label">
-													Ordering Promo
-												</div>
-												<div style="color: #FF0004;" class="sp-wallet__accent">
-													- €120
-												</div>
-											</div>
-										</summary>
-									</details>
+
 								</div>
+								<button class="safety__button button">
+									Save Changes
+								</button>
 							</div>
 						</section>
 					</div>
 					<div class="profile__right">
-						<div data-da=".set-profile, 768, 1" class="profile__add-funds add-funds">
-							<div class="add-funds__header">
-								<span>€200</span>
-								Сredits on your wallet
-							</div>
-							<div class="add-funds__body">
-								<h5 class="add-funds__title">
-									Quick Top-Up Options ⚡
-								</h5>
-								<div class="add-funds__label">
-									Add funds to your wallet
-								</div>
-							</div>
-							<form action="#" class="add-funds__form">
-								<div class="add-funds__fields">
-									<label class="add-funds__radio">
-										<input type="radio" name="add-funds">
-										€5.00
-									</label>
-									<label class="add-funds__radio">
-										<input type="radio" name="add-funds">
-										€10.00
-									</label>
-									<label class="add-funds__radio">
-										<input type="radio" name="add-funds">
-										€20.00
-									</label>
-									<label class="add-funds__radio">
-										<input type="radio" name="add-funds">
-										€50.00
-									</label>
-									<label class="add-funds__radio">
-										<input type="radio" name="add-funds">
-										€100.00
-									</label>
-									<label class="add-funds__radio">
-										<input type="radio" name="add-funds">
-										€200.00
-									</label>
-									<div class="add-funds__field field">
-										<div class="field__input">
-											<div class="field__label">
-												Enter your amount
-											</div>
-											<input type="text" placeholder="">
-										</div>
-									</div>
-								</div>
-								<button class="add-funds__button button _icon-plus">
-									Add Funds
-								</button>
-							</form>
-						</div>
 						<div class="profile__boost-banner boost-banner">
 							<div class="boost-banner__text">
 								Your profile has already been viewed <b>12,544 times</b>
